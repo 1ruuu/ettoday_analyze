@@ -57,7 +57,7 @@ class ETtoday:
 
         result = list()
         category_id = settings.CATEGORY_DICT[category]
-        browser = webdriver.Chrome(str(settings.FILE_PATH) + settings.CHROMEDRIVER)
+        browser = webdriver.Chrome()
         browser.get(f"https://www.ettoday.net/news/news-list-{date_list[0]}-{category_id}.htm")
         browser.implicitly_wait(10)
 
